@@ -271,11 +271,23 @@ ul { list-style: none; }
 }
 
 /* ── HERO ── */
+/* Modifica tu bloque .hero actual para que quede así */
 .hero {
   min-height: 100vh;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 120px 80px 80px;
-  position: relative; overflow: hidden; gap: 40px;
+  display: flex; 
+  align-items: center; 
+  padding: 120px 0 80px; /* Cambiamos el padding lateral de 80px a 0 */
+  position: relative; 
+  overflow: hidden; 
+}
+
+/* Agrega esta nueva regla justo debajo de .hero */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Separa el texto de la moneda */
+  width: 100%;
+  gap: 40px;
 }
 .hero-bg-glow {
   position: absolute; border-radius: 50%;
@@ -962,6 +974,6 @@ ul { list-style: none; }
   .together-strip { gap: 20px; padding: 24px; }
 }
 
-@media (prefers-reduced-motion: reduce) {
+/*@media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
-}
+}*/
